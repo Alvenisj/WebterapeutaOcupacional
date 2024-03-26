@@ -3334,7 +3334,10 @@
 		width: 100%;
 		z-index: 10001;
 		padding: 0 1.5em;
+	
 	}
+
+
 
 		#header.alt {
 			top: 0;
@@ -3350,6 +3353,14 @@
 			padding: 0;
 			position: absolute;
 			top: 0;
+		}
+
+		@media screen and (max-width: 400px) {
+
+			#header .logo {
+				font-size: 11px;
+			}
+
 		}
 
 			#header .logo a {
@@ -3467,9 +3478,9 @@
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: #10cdfce0;
+		background: #01c6f7;
 		box-shadow: none;
-		color: #ffffff;
+		color: #fbfcf8;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -3567,7 +3578,7 @@
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
 			transform: translateX(0);
-			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
+			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.4);
 			visibility: visible;
 		}
 

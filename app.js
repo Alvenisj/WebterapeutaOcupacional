@@ -28,44 +28,35 @@ app.use( express.static( publicPath ) );
 app.get('/', ( req, res ) => {
    
    res.render('inicio', {
-       pestana: "HealthyCare | TO",
-       nombre: 'Lisseth Viera',
-       titulo: 'Licenciada en Terapia Ocupacional ||'
+       pestana: "HealthyCare || TO",
+       titulo: 'Licenciada en Terapia Ocupacional'
      });
   
 } );
 
 app.get('/leerOne',  ( req, res ) => {
    
-   res.render('leerOne', {
-       pestanaLeerOne: "HealthyCare | leerOne"
-    })
+   res.render('leerOne')
 
 } );
 
 app.get('/leerTwo',  ( req, res ) => {
    
-   res.render('leerTwo', {
-       pestanaLeerTwo: "HealthyCare | leerTwo"
-    })
+   res.render('leerTwo')
 
 } );
 
 
 app.get('/leerThree',  ( req, res ) => {
    
-   res.render('leerThree', {
-       pestanaLeerThree: "HealthyCare | leerThree"
-    })
+   res.render('leerThree')
 
 } );
 
 
 app.get('/leerFour',  ( req, res ) => {
    
-   res.render('leerFour', {
-       pestanaLeerFour: "HealthyCare | leerFour"
-    })
+   res.render('leerFour')
 
 } );
 
@@ -73,7 +64,7 @@ app.get('/leerFour',  ( req, res ) => {
 app.get('/nuestrosServicios',  ( req, res ) => {
    
    res.render('nuestrosServicios', {
-       pestanaInforma: "HealthyCare | nuestrosServicios"
+         titulo: 'Licenciada en Terapia Ocupacional'
     });
 
 
@@ -82,33 +73,25 @@ app.get('/nuestrosServicios',  ( req, res ) => {
 
 app.get('/serviceOne', ( req, res ) => {
    
-   res.render('serviceOne', {
-       pestanaInforma: "HealthyCare | serviceOne"
-    });
+   res.render('serviceOne');
 
 } );
 
 app.get('/serviceTwo', ( req, res ) => {
    
-   res.render('serviceTwo', {
-       pestanaInforma: "HealthyCare | serviceTwo"
-    });
+   res.render('serviceTwo');
 
 } );
 
 app.get('/serviceThree',  ( req, res ) => {
    
-   res.render('serviceThree', {
-       pestanaInforma: "HealthyCare | serviceThree"
-    });
+   res.render('serviceThree');
 
 } );
 
 app.get('/serviceFour',  ( req, res ) => {
    
-   res.render('serviceFour', {
-       pestanaInforma: "HealthyCare | serviceFour"
-    });
+   res.render('serviceFour');
 
 
 } );
@@ -116,16 +99,14 @@ app.get('/serviceFour',  ( req, res ) => {
 
 app.get('/serviceFive',  ( req, res ) => {
    
-   res.render('serviceFive', {
-       pestanaInforma: "HealthyCare | serviceFive"
-    });
+   res.render('serviceFive');
 
 } );
 
 app.get('/contactanos',  ( req, res ) => {
    
    res.render('contactanos', {
-       pestanaInforma: "HealthyCare | contactanos"
+    titulo: 'Licenciada en Terapia Ocupacional'
     });
 
 } );
